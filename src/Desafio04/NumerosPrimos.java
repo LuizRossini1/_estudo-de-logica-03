@@ -5,4 +5,12 @@ gerarProximoPrimo() para o GeradorPrimo. */
 package Desafio04;
 
 public class NumerosPrimos {
+    //Métodos
+    public void verificarPrimalidade() {
+
+    }
+
+    public void listarPrimos() {
+
+    }
 }
