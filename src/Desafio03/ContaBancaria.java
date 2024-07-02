@@ -5,5 +5,26 @@ que desconta uma tarifa mensal da conta corrente. */
 package Desafio03;
 
 public class ContaBancaria {
+    //Variáveis
+    private int saldo = 2100;
 
+    //Getters
+    public int getSaldo() {
+        return saldo;
+    }
+
+    //Métodos
+    public void depositar(int valor) {
+        this.saldo += valor;
+        System.out.println("Saldo atualizado: " +getSaldo());
+    }
+
+    public void sacar(int valor) {
+        this.saldo -= valor;
+        System.out.println("Saldo atualizado: " +getSaldo());
+    }
+
+    public void consultarSaldo() {
+        System.out.println(getSaldo());
+    }
 }
