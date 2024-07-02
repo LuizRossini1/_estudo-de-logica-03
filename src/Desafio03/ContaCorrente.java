@@ -5,7 +5,7 @@ public class ContaCorrente extends ContaBancaria {
     public void cobrarTarifa() {
         int taxa = 25;
         diminuirSaldo(taxa);
-        System.out.println(getSaldo());
+        System.out.println("Saldo atualiado pós tarifa: " +getSaldo());
     }
 
     public static void main(String[] args) {

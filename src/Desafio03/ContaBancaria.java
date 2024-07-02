@@ -25,7 +25,7 @@ public class ContaBancaria {
     }
 
     public void consultarSaldo() {
-        System.out.println(getSaldo());
+        System.out.println("Seu saldo é: " +getSaldo());
     }
 
     protected void diminuirSaldo(int valor) {
