@@ -43,12 +43,13 @@ public class Carro {
     }
 
     public void fichaTecnica() {
-        System.out.println("Marca: " +getMarca()+ "Modelo: " +getModelo());
-        System.out.println("Media de preços: ");
+        System.out.println("Marca: " +getMarca());
+        System.out.println("Modelo: " +getModelo());
     }
 
     public int mediaPreco() {
         int mediaPrecoAnual = (precoAno2022 + precoAno2023 + precoAno2024) / 3;
+        System.out.println("A média de preços é: " +mediaPrecoAnual);
         return mediaPrecoAnual;
     }
 
@@ -59,25 +60,25 @@ public class Carro {
         //Verificação do maior preço
         if (precoAno2022 >= precoAno2023 && precoAno2022 >= precoAno2024) {
             maior = precoAno2022;
-            System.out.println(precoAno2022);
+            System.out.println("Maior preço: " +precoAno2022);
         } else if (precoAno2023 >= precoAno2022 && precoAno2023 >= precoAno2024) {
             maior = precoAno2023;
-            System.out.println(precoAno2023);
+            System.out.println("Maior preço: " +precoAno2023);
         } else {
             maior = precoAno2024;
-            System.out.println(precoAno2024);
+            System.out.println("Maior preço: " +precoAno2024);
         }
 
         //Verificação do menor preço
         if (precoAno2022 <= precoAno2023 && precoAno2022 <= precoAno2024) {
             menor = precoAno2022;
-            System.out.println(precoAno2022);
+            System.out.println("Menor preço: " +precoAno2022);
         } else if (precoAno2023 <= precoAno2022 && precoAno2023 <= precoAno2024) {
             menor = precoAno2023;
-            System.out.println(precoAno2023);
+            System.out.println("Menor preço: " +precoAno2023);
         } else {
             menor = precoAno2024;
-            System.out.println(precoAno2024);
+            System.out.println("Menor preço: " +precoAno2024);
         }
     }
 }
