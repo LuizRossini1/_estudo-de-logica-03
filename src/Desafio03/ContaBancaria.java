@@ -27,4 +27,8 @@ public class ContaBancaria {
     public void consultarSaldo() {
         System.out.println(getSaldo());
     }
+
+    protected void diminuirSaldo(int valor) {
+        this.saldo -= valor;
+    }
 }
