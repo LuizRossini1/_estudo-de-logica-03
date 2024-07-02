@@ -1,4 +1,4 @@
-package Estudo;
+package Desafio01;
 
 public class ModeloCarro extends Carro{
     public ModeloCarro(String marca, String modelo, int precoAno2022, int precoAno2023, int precoAno2024) {
